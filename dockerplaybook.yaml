@@ -1,6 +1,7 @@
 - name: installdocker
   hosts: docker
   become: yes
+  become_method: sudo
   vars:
     pkgstoinstall: [ libffi-dev, libssl-dev, python3, python3-pip ]
   tasks:
