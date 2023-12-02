@@ -4,6 +4,7 @@
     hosts: all
     tasks:
      - name: update apt
+       become: true
        apt:
          upgrade: yes
          update_cache: yes
