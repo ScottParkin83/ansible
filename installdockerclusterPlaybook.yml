@@ -2,11 +2,8 @@
   # ref: https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-docker-on-ubuntu-20-04
   - name: Install docker & k3s
     hosts: all
-    become: false
     tasks:
      - name: update apt
-       become: false
-       become_method: sudo
        apt:
          upgrade: yes
          update_cache: yes
