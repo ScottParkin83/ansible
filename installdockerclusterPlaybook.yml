@@ -4,7 +4,6 @@
     hosts: all
     become: true
     become_user: scott
-    become_password: f0rmated
     vars:
       current_user: "{{ lookup('env', 'USER') }}"
     tasks:
