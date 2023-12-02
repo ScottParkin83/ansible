@@ -1,4 +1,4 @@
-- name: Install docker & k3s
+name: Install docker & k3s
   become: true
   apt:
     upgrade: yes
